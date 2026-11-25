@@ -160,5 +160,630 @@
             "wideChat": "وضع المحادثة العريضة",
             "wideChatDescription": "استخدام تخطيط أوسع لنافذة المحادثة."
         }
+    },
+    "authorNotes": {
+        "alert": {
+            "delete": {
+                "button": "حذف الملاحظة",
+                "description": "هل تريد بالتأكيد حذف {{name}}؟ لا يمكن التراجع عن هذا الإجراء.",
+                "title": "حذف الملاحظة"
+            }
+        },
+        "empty": "لا توجد ملاحظات",
+        "errors": {
+            "create": "تعذّر إنشاء الملاحظة"
+        },
+        "item": {
+            "comments": "التعليقات",
+            "content": "محتوى الملاحظة",
+            "depth": "العمق",
+            "noContent": "لا يوجد محتوى",
+            "priority": "الأولوية"
+        },
+        "selector": {
+            "character": "الشخصية",
+            "chat": "المحادثة",
+            "global": "عام"
+        },
+        "type": "نوع الملاحظة",
+        "unsavedChanges": {
+            "description": "لديك تغييرات غير محفوظة، وسيؤدي الخروج إلى فقدانها.",
+            "discard": "تجاهل التغييرات",
+            "title": "تغييرات غير محفوظة"
+        }
+    },
+    "character": {
+        "editor": {
+            "actions": {
+                "changeBackground": "تغيير الخلفية",
+                "changeImage": "تغيير الصورة",
+                "export": "تصدير",
+                "manageLinks": "إدارة الروابط",
+                "removeBackground": "إزالة الخلفية",
+                "viewImage": "عرض الصورة"
+            },
+            "dialogs": {
+                "clone": {
+                    "confirm": "استنساخ الشخصية",
+                    "description": "هل تريد بالتأكيد استنساخ «{{name}}»؟",
+                    "title": "استنساخ الشخصية"
+                },
+                "deleteAlternateMessage": {
+                    "confirm": "حذف",
+                    "description": "هل تريد بالتأكيد حذف هذه الرسالة البديلة؟ لا يمكن التراجع عن ذلك.",
+                    "title": "حذف الرسالة البديلة"
+                },
+                "deleteCharacter": {
+                    "confirm": "حذف الشخصية",
+                    "description": "هل تريد بالتأكيد حذف «{{name}}»؟ لا يمكن التراجع عن ذلك.",
+                    "title": "حذف الشخصية"
+                },
+                "deleteImage": {
+                    "confirm": "حذف الصورة",
+                    "description": "هل تريد بالتأكيد حذف هذه الصورة؟ لا يمكن التراجع عن ذلك.",
+                    "title": "حذف الصورة"
+                },
+                "unsavedChanges": {
+                    "description": "لديك تغييرات غير محفوظة، وسيؤدي المغادرة الآن إلى فقدان تقدمك.",
+                    "discard": "تجاهل التغييرات",
+                    "title": "تغييرات غير محفوظة"
+                }
+            },
+            "emptyStates": {
+                "noAlternateGreetings": "لا توجد تحيات بديلة"
+            },
+            "errors": {
+                "cardNoCharacter": "لم يتم العثور على شخصية.",
+                "copyCardNotExist": "فشل نسخ البطاقة: البطاقة غير موجودة",
+                "createFailed": "فشل إنشاء الشخصية",
+                "createFromImage": "فشل إنشاء البطاقة: تعذّر جلب الصورة",
+                "deleteBackground": "فشل حذف الخلفية",
+                "export": "تعذّر التصدير: {{error}}",
+                "exportFailed": "فشل التصدير",
+                "failedToCopyCard": "فشل نسخ البطاقة",
+                "invalidCharacterCard": "بطاقة شخصية غير صالحة",
+                "v2ParsingFailedFallingBack": "فشل تحليل الإصدار V2، ستتم محاولة استخدام V1"
+            },
+            "fields": {
+                "alternateGreeting": "تحية بديلة",
+                "exampleMessages": "رسائل نموذجية",
+                "firstMessage": "الرسالة الأولى",
+                "personality": "الشخصية",
+                "scenario": "السيناريو",
+                "tags": "الوسوم"
+            },
+            "links": {
+                "description": "سيتم تحميل الإعدادات المرتبطة تلقائياً عند تحميل هذه الشخصية",
+                "loadConnection": "جارٍ تحميل الاتصال بالفهرس: {{value}}",
+                "loadInstruct": "جارٍ تحميل تعليمات التنسيق بالمعرّف: {{value}}",
+                "loadModel": "جارٍ تحميل النموذج بالمعرّف: {{value}}",
+                "loadSampler": "جارٍ تحميل إعداد التوليد بالفهرس: {{value}}",
+                "loadUser": "جارٍ تحميل المستخدم بالمعرّف: {{value}}",
+                "missingConnection": "لا يوجد اتصال مرتبط",
+                "missingInstruct": "لا يوجد تنسيق مرتبط",
+                "missingModel": "لا يوجد نموذج مرتبط",
+                "missingSampler": "لا يوجد إعداد توليد مرتبط",
+                "missingUser": "لا يوجد مستخدم مرتبط"
+            },
+            "messages": {
+                "deleted": "تم حذف الشخصية: {{name}}",
+                "exported": "تم تصدير البطاقة!",
+                "saved": "تم حفظ البطاقة!"
+            },
+            "metrics": {
+                "descriptionTokens": "رموز الوصف: {{count}}"
+            },
+            "title": "محرر الشخصيات"
+        },
+        "list": {
+            "actions": {
+                "createCharacter": "إنشاء شخصية",
+                "createNewCharacter": "إنشاء شخصية جديدة",
+                "importFromFile": "استيراد من ملف"
+            },
+            "columns": {
+                "name": "الاسم"
+            },
+            "emptyStates": {
+                "noCharactersFound": "لم يتم العثور على شخصيات. جرّب استيراد بعضها!",
+                "noCharactersMatch": "لا توجد شخصيات تطابق نتائج البحث",
+                "noMessages": "لا توجد رسائل"
+            },
+            "errors": {
+                "chatCreationFailed": "فشل إنشاء نسخة احتياطية للمحادثة! يرجى الإبلاغ عن المشكلة.",
+                "load": "تعذّر تحميل الشخصية: {{error}}",
+                "nameCannotBeEmpty": "لا يمكن ترك الاسم فارغاً",
+                "nameEmpty": "الاسم لا يمكن أن يكون فارغاً!"
+            },
+            "messages": {
+                "hiderDisabled": "تم تعطيل الإخفاء",
+                "hiderEnabled": "تم تفعيل الإخفاء"
+            },
+            "search": {
+                "byName": "البحث بالاسم",
+                "byTags": "البحث بالوسوم"
+            },
+            "sort": {
+                "label": "ترتيب حسب",
+                "recent": "الأحدث"
+            }
+        }
+    },
+    "chat": {
+        "bubble": {
+            "promptSpeed": "المطالبة: {{tokens}} رمز/ث | {{seconds}}ث",
+            "textGenerationSpeed": "توليد النص: {{tokens}} رمز/ث | {{seconds}}ث"
+        },
+        "drawer": {
+            "actions": {
+                "startNewChat": "بدء محادثة جديدة"
+            },
+            "dialogs": {
+                "clone": {
+                    "confirm": "استنساخ المحادثة",
+                    "description": "هل تريد بالتأكيد استنساخ «{{name}}»؟",
+                    "title": "استنساخ المحادثة"
+                },
+                "delete": {
+                    "confirm": "حذف المحادثة",
+                    "description": "هل تريد بالتأكيد حذف «{{name}}»؟ لا يمكن التراجع عن ذلك.",
+                    "title": "حذف المحادثة"
+                }
+            },
+            "errors": {
+                "defaultChatFailed": "حدث خطأ أثناء إنشاء محادثة افتراضية",
+                "exportFailed": "فشل تصدير المحادثة",
+                "undefinedChat": "المحادثة غير معرّفة"
+            },
+            "labels": {
+                "unknown": "غير معروف"
+            },
+            "messages": {
+                "exported": "تم حفظ الملف {{name}} في التنزيلات!"
+            },
+            "rename": {
+                "errors": {
+                    "nameCannotBeEmpty": "لا يمكن ترك الاسم فارغاً"
+                }
+            },
+            "search": {
+                "errors": {
+                    "queryFailed": "فشل البحث في المحادثة: {{error}}"
+                },
+                "noResults": "لا توجد نتائج",
+                "placeholder": "ابحث عن رسالة...",
+                "resultsFound": "النتائج: {{count}}",
+                "title": "بحث"
+            },
+            "title": "المحادثات",
+            "user": {
+                "alreadySet": "هذا المستخدم محدد بالفعل",
+                "linkAction": "ربط مستخدم",
+                "linked": "مرتبط بالمستخدم: {{name}}",
+                "noneSelected": "لا يوجد مستخدم حالي"
+            }
+        },
+        "editor": {
+            "actions": {
+                "confirm": "تأكيد",
+                "delete": "حذف",
+                "reset": "إعادة ضبط"
+            }
+        },
+        "filteredText": {
+            "hide": "إخفاء النصوص المصفّاة",
+            "show": "إظهار النصوص المصفّاة"
+        },
+        "footer": {
+            "emptyState": {
+                "sendMessageToBegin": "أرسل رسالة للبدء",
+                "startOfChat": "بداية المحادثة"
+            }
+        },
+        "frame": {
+            "entryNumber": "#{{index}}",
+            "seconds": "{{seconds}}ث"
+        },
+        "import": {
+            "errors": {
+                "failedToImport": "فشل الاستيراد",
+                "noChatCharacter": "تحاول استيراد محادثة من دون شخصية أو مستخدم"
+            }
+        },
+        "input": {
+            "actions": {
+                "addImage": "إضافة صورة",
+                "authorNotes": "ملاحظات المؤلف",
+                "chatHistory": "سجل المحادثة",
+                "editCharacter": "تعديل الشخصية",
+                "mainMenu": "قائمة الشخصيات",
+                "takePicture": "التقاط صورة"
+            },
+            "errors": {
+                "abortGeneration": "جارٍ إيقاف التوليد",
+                "failedToSend": "فشل إرسال الرسالة",
+                "permissionDescription": "يلزم السماح بالوصول إلى الوسائط لإضافة المرفقات"
+            },
+            "message": "رسالة...",
+            "noConnection": "لا يوجد اتصال مفعّل",
+            "noModelLoaded": "لم يتم تحميل أي نموذج"
+        },
+        "model": {
+            "noModelLoaded": "لم يتم تحميل أي نموذج"
+        },
+        "quickActions": {
+            "createNote": {
+                "button": "إنشاء ملاحظة",
+                "description": "هل تريد إنشاء ملاحظة للمؤلف من هذه الرسالة؟",
+                "title": "إنشاء ملاحظة"
+            },
+            "errors": {
+                "cloneFailed": "فشل استنساخ المحادثة",
+                "copyFailed": "فشل النسخ إلى الحافظة",
+                "noteCreateFailed": "فشل إنشاء الملاحظة"
+            },
+            "fork": {
+                "button": "تفريع المحادثة",
+                "description": "سيؤدي ذلك إلى إنشاء نسخة من هذه المحادثة تبدأ من هذه الرسالة",
+                "title": "تفريع المحادثة"
+            },
+            "messages": {
+                "copied": "تم النسخ"
+            },
+            "toast": {
+                "copiedCode": "تم نسخ الشيفرة",
+                "copyFailed": "فشل النسخ إلى الحافظة"
+            }
+        },
+        "state": {
+            "failedToLoad": "فشل تحميل المحادثة {{id}}"
+        },
+        "tokencount": {
+            "title": "حد السياق",
+            "used": "المستخدم {{used}}، الحد الأقصى {{max}}"
+        }
+    },
+    "connections": {
+        "add": {
+            "apiKey": "مفتاح API",
+            "completionUrl": "رابط إكمال النص",
+            "createButton": "إنشاء واجهة API",
+            "defaultFriendlyName": "اتصال جديد",
+            "error": {
+                "200": "تعذّر جلب النماذج: {{error}}",
+                "modelparse": "تعذّر تحليل قائمة النماذج",
+                "modelundef": "أُعيدت قيمة غير معرّفة للنماذج",
+                "nonarray": "قائمة النماذج ليست مصفوفة. يُحتمل وجود خطأ في modelListParser للقالب"
+            },
+            "firstMessage": "الرسالة الأولى",
+            "firstMessageHint": "الرسالة الافتراضية الأولى المرسلة إلى Claude",
+            "friendlyName": "اسم وصفي",
+            "fullUrlHint": "ملاحظة: استخدم مسار الرابط كاملاً",
+            "model": "النموذج",
+            "modelUrl": "رابط النموذج",
+            "prefill": "نص تمهيدي",
+            "prefillHint": "نص يُرسل قبل استجابة النموذج",
+            "selectConnectionType": "اختر نوع الاتصال",
+            "selectModel": "اختر نموذجاً",
+            "title": "إضافة اتصال"
+        },
+        "connected": "متصل",
+        "editor": {
+            "apiKey": "مفتاح API",
+            "completionUrl": "رابط إكمال النص",
+            "customFields": "حقول مخصصة",
+            "firstMessage": "الرسالة الأولى",
+            "firstMessageHint": "الرسالة الافتراضية الأولى المرسلة إلى Claude",
+            "friendlyName": "اسم وصفي",
+            "fullUrlHint": "ملاحظة: استخدم مسار الرابط كاملاً",
+            "invalidTemplate": "تعذّر الحصول على قالب صالح!",
+            "model": "النموذج",
+            "modelUrl": "رابط النموذج",
+            "prefill": "نص تمهيدي",
+            "prefillHint": "نص يُرسل قبل استجابة النموذج",
+            "saveButton": "حفظ التغييرات",
+            "selectModel": "اختر نموذجاً",
+            "title": "تعديل الاتصال"
+        },
+        "failedToConnect": "فشل الاتصال",
+        "item": {
+            "delete": {
+                "button": "حذف الاتصال",
+                "description": "هل تريد بالتأكيد حذف «{{name}}»؟ لا يمكن التراجع عن ذلك!",
+                "title": "حذف الاتصال"
+            }
+        },
+        "manager": {
+            "add": "إضافة اتصال",
+            "empty": "لم تتم إضافة أي اتصالات",
+            "header": "الاتصالات"
+        },
+        "notConnected": "غير متصل",
+        "options": {
+            "disableCustomFields": "تعطيل الحقول المخصصة",
+            "enableCustomFields": "تفعيل الحقول المخصصة",
+            "manageTemplates": "إدارة القوالب"
+        },
+        "templates": {
+            "delete": {
+                "confirm": "حذف القالب",
+                "description": "هل تريد بالتأكيد حذف «{{name}}»؟",
+                "title": "حذف القالب"
+            },
+            "empty": "لم تتم إضافة قوالب مخصصة",
+            "exported": "تم تصدير القالب بنجاح",
+            "get": "الحصول على القوالب",
+            "import": "استيراد قالب",
+            "importError": "فشل الاستيراد: {{error}}",
+            "learn": "تعرّف على القوالب",
+            "paste": "لصق قالب",
+            "pasteSheetTitle": "الصق القالب هنا",
+            "title": "إدارة القوالب"
+        }
+    },
+    "contextlimit": {
+        "allocation": "توزيع السياق",
+        "chat": "سياق المحادثة",
+        "generated": "المُولّد",
+        "warning": "انخفاض سياق المحادثة يؤدي إلى نسيان الرسائل بسرعة أكبر"
+    },
+    "db": {
+        "migrationerror": {
+            "description": "إذا ظهرت لك هذه الرسالة، فقد حدث خطأ جسيم. أبلغ عن الخطأ أدناه وأرفق لقطة شاشة للسجل أعلاه.",
+            "title": "فشل ترحيل قاعدة البيانات!"
+        }
+    },
+    "dropdown": {
+        "filter": "تصفية...",
+        "selectItem": "اختر عنصراً"
+    },
+    "generation": {
+        "errors": {
+            "completionFailed": "فشل إكمال النص.",
+            "configurationNotFound": "لم يتم العثور على الإعداد «{{name}}»",
+            "failedToBuildPayload": "فشل إنشاء حمولة الطلب",
+            "failedToBuildPrompt": "فشل إنشاء المطالبة",
+            "failedToOrchestrateRequestBuild": "فشل تنسيق بناء الطلب",
+            "generationAlreadyInProgress": "يوجد توليد قيد التنفيذ بالفعل",
+            "generationFailed": "فشل التوليد",
+            "noActiveAPI": "لا توجد واجهة API نشطة",
+            "noActiveChat": "لا توجد محادثة نشطة",
+            "noCharacter": "لم يتم تحميل أي شخصية",
+            "noChatFound": "لم يتم العثور على محادثة",
+            "noUser": "لم يتم تحميل أي مستخدم",
+            "payloadConstructionFailed": "فشل إنشاء حمولة الطلب",
+            "promptConstructionFailed": "فشل إنشاء المطالبة",
+            "sseFailed": "حدث خطأ أثناء حدث SSE"
+        },
+        "warn": {
+            "entryWithoutValidSwipeFound": "تم العثور على إدخال من دون تمريرة صالحة",
+            "noMessagesAddedCheckLogs": "لم تتم إضافة رسائل. راجع السجلات."
+        }
+    },
+    "horizontalSelector": {
+        "description": "وصف اختياري لمساعدة المستخدم على فهم أداة الاختيار.",
+        "label": "عنوان أداة الاختيار"
+    },
+    "instruct": {
+        "attachments": "المرفقات",
+        "filteredtext": {
+            "description": "إرسال النص الذي تمت تصفيته إلى النموذج",
+            "label": "إرسال النص المصفّى"
+        },
+        "formatting": "تنسيق التعليمات",
+        "hiddentext": {
+            "description": "إخفاء النص المطابق لأنماط التعبيرات النمطية المحددة أدناه، مع تجاهل حالة الأحرف.",
+            "title": "النص المخفي"
+        },
+        "localtemplate": {
+            "description": "في الوضع المحلي، يستخدم ChatterUI تلقائياً قالب التعليمات المرفق بالنموذج المحمّل. عطّل هذا الخيار إذا أردت تنسيق الرسائل باستخدام إعدادات التعليمات بدلاً منه. تظل مطالبة النظام مستخدمة دائماً.",
+            "label": "استخدام قالب النموذج المحلي المدمج",
+            "title": "القالب المحلي"
+        },
+        "macros": "الاختصارات وبطاقة الشخصية",
+        "textformatter": {
+            "description": "تنسيق الرسالة الأولى تلقائياً وفق النمط أدناه",
+            "title": "منسّق النص"
+        }
+    },
+    "logs": {
+        "alert": {
+            "delete": {
+                "description": "هل تريد بالتأكيد حذف جميع السجلات؟ لا يمكن التراجع عن ذلك.",
+                "title": "حذف السجلات"
+            }
+        },
+        "export": "تصدير السجلات",
+        "flush": "مسح السجلات",
+        "title": "السجلات",
+        "toast": {
+            "downloaderror": "تعذّر تصدير السجلات",
+            "downloadok": "تم تنزيل السجلات!"
+        }
+    },
+    "lorebook": {
+        "delete": {
+            "description": "هل تريد بالتأكيد حذف «{{name}}»؟\n\nلا يمكن التراجع عن ذلك.",
+            "title": "حذف كتاب المعلومات"
+        },
+        "deleteEntry": {
+            "description": "هل تريد بالتأكيد حذف المدخل «{{name}}»؟\n\nلا يمكن التراجع عن ذلك.",
+            "title": "حذف المدخل"
+        },
+        "empty": "لم تتم إضافة أي كتب معلومات",
+        "fields": {
+            "caseSensitive": "مطابقة حالة الأحرف",
+            "constant": "دائم",
+            "entries": "المدخلات",
+            "insertionOrder": "ترتيب الإدراج",
+            "keys": "المفاتيح",
+            "priority": "الأولوية",
+            "recursiveScanning": "الفحص التكراري",
+            "scanDepth": "عمق الفحص",
+            "secondaryKeys": "المفاتيح الثانوية",
+            "selective": "انتقائي",
+            "tokenBudget": "ميزانية الرموز"
+        },
+        "import": "استيراد كتاب معلومات",
+        "labels": {
+            "generationSettings": "إعدادات التوليد",
+            "info": "معلومات كتاب المعلومات"
+        },
+        "new": {
+            "entry": "مدخل جديد",
+            "placeholder": "كتاب معلومات جديد",
+            "title": "أدخل الاسم"
+        },
+        "preferences": {
+            "afterLast": "بعد الأخير",
+            "afterSystem": "بعد النظام",
+            "beforeLast": "قبل الأخير",
+            "index": "الفهرس",
+            "insertionDepth": "عمق الإدراج",
+            "insertionType": "استراتيجية الإدراج"
+        },
+        "title": "كتب المعلومات"
+    },
+    "model": {
+        "alert": {
+            "deletekv": {
+                "description": "هل تريد بالتأكيد حذف ذاكرة KV المؤقتة؟ لا يمكن التراجع عن ذلك.\n\nسيؤدي هذا إلى توفير {{size}} من المساحة.",
+                "title": "حذف ذاكرة KV المؤقتة"
+            },
+            "deletemodel": {
+                "description": "هل تريد بالتأكيد حذف «{{name}}»؟\n\nلا يمكن التراجع عن ذلك!",
+                "external": "\n\n(لن يؤدي هذا إلى حذف ملفات النموذج الخارجية، بل سيحذف هذا الإدخال فقط)",
+                "internal": "\n\nستوفر هذه العملية {{size}} من المساحة",
+                "title": "حذف النموذج"
+            }
+        },
+        "autoload": "تحميل النموذج تلقائياً عند فتح المحادثة",
+        "backenddev": "جهاز المعالجة الخلفية",
+        "batch": "حجم الدفعة",
+        "contextshift": "إزاحة السياق",
+        "copymodel": "نسخ النموذج إلى ChatterUI",
+        "empty": "لم يتم العثور على نماذج. جرّب استيراد بعضها!",
+        "externalmodel": "استخدام نموذج خارجي",
+        "gpulayers": "طبقات GPU",
+        "info": {
+            "hint": "تلميح: اضغط على <icon /> واستورد نموذج GGUF!",
+            "loaded": "تم تحميل النموذج"
+        },
+        "item": {
+            "contextlength": "طول السياق",
+            "file": "الملف",
+            "invalid": "النموذج غير صالح",
+            "noparamsize": "لا يتوفر حجم المعاملات",
+            "rename": "إعادة تسمية النموذج"
+        },
+        "linkmmproj": "ربط MMPROJ",
+        "magic": "الترويسة: {{magic}}، بالنظام الست عشري: {{hex}}",
+        "maxcontext": "الحد الأقصى للسياق",
+        "mmproj": "mmproj",
+        "modelnamechat": "عرض اسم النموذج في المحادثة",
+        "mtmd": "محولات متعددة الوسائط",
+        "purgekv": "مسح ذاكرة KV المؤقتة ({{size}})",
+        "savekv": "حفظ ذاكرة KV محلياً",
+        "savekvdesc": "يحفظ ذاكرة KV المؤقتة أثناء التوليد، ما يسمح بمتابعة الجلسات بعد إغلاق التطبيق. يجب استخدام النموذج نفسه حتى تعمل هذه الميزة. قد يكون ملف ذاكرة KV كبيراً جداً وقد يؤثر سلباً في عمر البطارية!",
+        "selectmmproj": "اختيار نموذج MMPROJ",
+        "settings": {
+            "advanced": "إعدادات متقدمة",
+            "cpu": "إعدادات المعالج",
+            "title": "إعدادات النموذج"
+        },
+        "threads": "خيوط المعالجة",
+        "title": "النماذج",
+        "toast": {
+            "autoLoadingMMPROJ": "جارٍ تحميل MMPROJ تلقائياً: {{name}}",
+            "autoLoadingModel": "جارٍ تحميل النموذج تلقائياً: {{name}}",
+            "couldNotLoadModel": "تعذّر تحميل النموذج",
+            "deletekv": "تم حذف ذاكرة KV المؤقتة!",
+            "failedToGenerateLocally": "فشل التوليد محلياً",
+            "failedToLoadMMPROJ": "فشل تحميل MMPROJ",
+            "failedToRunLocalInference": "فشل تنفيذ الاستدلال المحلي",
+            "failedToUnloadMMPROJ": "فشل إلغاء تحميل MMPROJ",
+            "failedtolink": "فشل ربط النموذج",
+            "failedtoload": "فشل تحميل النموذج",
+            "mediaAddedWithoutMMPROJModel": "تمت إضافة الوسائط من دون نموذج MMPROJ",
+            "mediaAddedWithoutMultimodalSupport": "تمت إضافة الوسائط من دون دعم تعدد الوسائط.",
+            "modelAlreadyLoaded": "النموذج محمّل بالفعل!",
+            "modelDoesNotExist": "النموذج غير موجود!",
+            "modelImportedSuccessfully": "تم استيراد النموذج بنجاح!",
+            "modelMissingEntryDeleted": "النموذج مفقود، وسيتم حذف إدخاله: {{name}}",
+            "noAutoLoadModelSet": "لم يتم تحديد نموذج للتحميل التلقائي",
+            "noModelLoaded": "لم يتم تحميل أي نموذج",
+            "quantizationNoLongerSupported": "لم يعد هذا التكميم مدعوماً!"
+        },
+        "unlinkmmproj": "إلغاء ربط MMPROJ"
+    },
+    "multiDropdown": {
+        "counter_one": "تم تحديد عنصر واحد ({{count}})",
+        "counter_other": "تم تحديد {{count}} عناصر",
+        "noItemsSelected": "لم يتم تحديد أي عناصر"
+    },
+    "sampler": {
+        "alert": {
+            "delete": {
+                "description": "هل تريد بالتأكيد حذف «{{name}}»؟",
+                "title": "حذف إعداد التوليد"
+            }
+        },
+        "create": "إنشاء إعداد توليد",
+        "delete": "حذف إعداد التوليد",
+        "empty": "لا توجد إعدادات توليد لتهيئتها",
+        "export": "تصدير إعداد التوليد",
+        "invalid": "حقل إعداد التوليد غير صالح!",
+        "new": "إعداد توليد جديد",
+        "noSamplers": "يبدو أنك لم تضف اتصال API بعد",
+        "notSupported": "معرّف إعداد التوليد [{{id}}] غير مدعوم",
+        "title": "إعدادات التوليد",
+        "toast": {
+            "emptyname": "لا يمكن ترك اسم إعداد التوليد فارغاً",
+            "exists": "إعداد التوليد «{{name}}» موجود بالفعل!",
+            "exportok": "تم تصدير إعداد التوليد!",
+            "failedToImport": "فشل الاستيراد",
+            "lastconfig": "لا يمكن حذف الإعداد الأخير"
+        }
+    },
+    "stringArrayEditor": {
+        "add": "إضافة",
+        "duplicateValueError": "القيمة موجودة بالفعل",
+        "emptyValueError": "لا يمكن ترك القيمة فارغة",
+        "placeholder": "أدخل قيمة..."
+    },
+    "tts": {
+        "autoafter": "تحويل النص إلى كلام تلقائياً بعد الاستدلال",
+        "language": "اللغة",
+        "live": "تحويل النص إلى كلام تلقائياً أثناء الاستدلال",
+        "nospeaker": "لم يتم اختيار صوت",
+        "selectlang": "اختر اللغة",
+        "selectvoice": "اختر صوتاً",
+        "speed": "السرعة",
+        "test": "هذا مقطع صوتي تجريبي",
+        "voices": "الأصوات"
+    },
+    "users": {
+        "create": "إنشاء مستخدم جديد",
+        "edit": {
+            "card": {
+                "clone": "استنساخ المستخدم",
+                "clonedesc": "هل تريد بالتأكيد استنساخ «{{name}}»؟",
+                "delete": "حذف المستخدم",
+                "deletedesc": "هل تريد بالتأكيد حذف «{{name}}»؟\nلا يمكن التراجع عن ذلك."
+            },
+            "image": {
+                "change": "تغيير الصورة",
+                "delete": "حذف الصورة",
+                "deletedesc": "هل تريد بالتأكيد حذف هذه الصورة؟\nلا يمكن التراجع عن ذلك.",
+                "view": "عرض الصورة"
+            },
+            "title": "تعديل المستخدم"
+        },
+        "hint": "تلميح: اسحب إلى اليسار أو اضغط على <icon/> لفتح قائمة المستخدمين",
+        "messages": {
+            "loadingUser": "جارٍ تحميل المستخدم: {{name}}"
+        },
+        "nameplaceholder": "يُفضّل عدم ترك الاسم فارغاً",
+        "profilecount": "ملفات المستخدمين"
     }
 }
