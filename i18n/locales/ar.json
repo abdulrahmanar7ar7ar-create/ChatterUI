@@ -905,5 +905,79 @@
         },
         "nameplaceholder": "يُفضّل عدم ترك الاسم فارغاً",
         "profilecount": "ملفات المستخدمين"
+    },
+    "formatting": {
+        "alert": {
+            "deleteConfig": {
+                "cancel": "إلغاء",
+                "confirm": "حذف التعليمات",
+                "description": "هل تريد بالتأكيد حذف «{{name}}»؟",
+                "title": "حذف الإعداد"
+            },
+            "regenerateDefaults": {
+                "cancel": "إلغاء",
+                "confirm": "إعادة إنشاء الإعدادات الافتراضية",
+                "description": "هل تريد بالتأكيد إعادة إنشاء إعدادات التعليمات الافتراضية؟",
+                "title": "إعادة إنشاء التعليمات الافتراضية"
+            }
+        },
+        "autoformatter": {
+            "asteriskActionPlainSpeech": "فعل بين نجمتين وكلام عادي",
+            "asteriskActionPlainSpeechExample": "*فعل ما* كلام منطوق",
+            "asteriskActionQuoteSpeech": "فعل بين نجمتين وكلام بين علامتي اقتباس",
+            "asteriskActionQuoteSpeechExample": "*فعل ما* \"كلام منطوق\"",
+            "disabled": "معطّل",
+            "disabledExample": "*<بلا تنسيق>*",
+            "plainActionQuoteSpeech": "فعل عادي وكلام بين علامتي اقتباس",
+            "plainActionQuoteSpeechExample": "فعل ما، \"كلام منطوق\""
+        },
+        "configExists": "الإعداد موجود بالفعل",
+        "createConfig": "إنشاء إعداد",
+        "defaultName": "افتراضي",
+        "deleteConfig": "حذف الإعداد",
+        "deleteConfigDescription": "هل تريد بالتأكيد حذف «{{name}}»؟",
+        "deleteInstruct": "حذف التعليمات",
+        "errors": {
+            "instructDataError": "حدث خطأ في بيانات التعليمات"
+        },
+        "exportConfig": "تصدير الإعداد",
+        "jsonExtension": ".json",
+        "newPreset": "إعداد تعليمات جديد",
+        "regenerateDefaultPresets": "إعادة إنشاء الإعدادات الافتراضية",
+        "regenerateDefaults": "إعادة إنشاء التعليمات الافتراضية",
+        "regenerateDefaultsDescription": "هل تريد بالتأكيد إعادة إنشاء تعليمات التنسيق الافتراضية؟",
+        "sections": {
+            "examples": "استخدام الأمثلة",
+            "hideThinkTags": "إزالة وسوم التفكير",
+            "inputPrefix": "بادئة الإدخال",
+            "inputSuffix": "لاحقة الإدخال",
+            "lastImageOnly": "استخدام الصورة الأخيرة فقط",
+            "lastOutputPrefix": "بادئة آخر مخرجات",
+            "names": "تضمين الأسماء",
+            "outputPrefix": "بادئة المخرجات",
+            "outputSuffix": "لاحقة المخرجات",
+            "personality": "استخدام الشخصية",
+            "scenario": "استخدام السيناريو",
+            "sendAudio": "إرسال الصوت",
+            "sendDocuments": "إرسال المستندات",
+            "sendImages": "إرسال الصور",
+            "stopSequence": "تسلسل الإيقاف",
+            "systemPrefix": "بادئة النظام",
+            "systemPrompt": "موجّه النظام",
+            "systemPromptFormat": "تنسيق موجّه النظام",
+            "systemSuffix": "لاحقة النظام",
+            "timestamp": "إضافة طابع زمني",
+            "useCommonStopSequences": "استخدام تسلسلات الإيقاف الشائعة",
+            "wrap": "الإحاطة بسطر جديد"
+        },
+        "selectConfig": "اختيار الإعداد",
+        "title": "التنسيق",
+        "toast": {
+            "cannotDeleteLastPreset": "لا يمكن حذف آخر إعداد للتعليمات.",
+            "configCreated": "تم إنشاء الإعداد.",
+            "configNameExists": "اسم الإعداد موجود بالفعل.",
+            "savedToDownloads": "تم حفظ «{{name}}» في التنزيلات"
+        },
+        "unused": "غير مستخدم في الوضع الحالي {{mode}}"
     }
 }
