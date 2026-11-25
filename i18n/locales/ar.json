@@ -1,0 +1,164 @@
+{
+    "about": {
+        "description": {
+            "primary": "ChatterUI تطبيق مجاني ومفتوح المصدر طوّره Vali-98",
+            "support": "هذا التطبيق مشروع أعمل على تطويره في وقت فراغي. إذا أعجبك، يمكنك دعم تطويره."
+        },
+        "devMode": {
+            "disableAction": "تعطيل وضع المطوّر",
+            "disabledMessage": "تم تعطيل وضع المطوّر.",
+            "enabledMessage": "تم تفعيل وضع المطوّر."
+        },
+        "logsReminder": "تذكّر إرفاق السجلات",
+        "reportIssue": "هل واجهت مشكلة؟ أبلغ عنها هنا:",
+        "support": {
+            "button": "ادعم ChatterUI",
+            "label": "تبرّع لدعم ChatterUI:"
+        },
+        "versionPrefix": "الإصدار "
+    },
+    "appMode": {
+        "options": {
+            "local": "محلي",
+            "remote": "عن بُعد"
+        },
+        "title": "وضع التطبيق"
+    },
+    "auth": {
+        "authorizationRequired": "يلزم التفويض"
+    },
+    "common": {
+        "actions": {
+            "add": "إضافة",
+            "back": "رجوع",
+            "cancel": "إلغاء",
+            "clone": "استنساخ",
+            "close": "إغلاق",
+            "create": "إنشاء",
+            "delete": "حذف",
+            "disable": "تعطيل",
+            "discard": "تجاهل",
+            "discardChanges": "تجاهل التغييرات",
+            "edit": "تعديل",
+            "enable": "تفعيل",
+            "export": "تصدير",
+            "link": "ربط",
+            "more": "المزيد",
+            "rename": "إعادة تسمية",
+            "reset": "إعادة ضبط",
+            "save": "حفظ",
+            "search": "بحث",
+            "select": "اختيار",
+            "test": "اختبار",
+            "tryAgain": "إعادة المحاولة"
+        },
+        "alert": {
+            "unsaved": {
+                "description": "لديك تغييرات غير محفوظة. سيؤدي الخروج إلى تجاهلها جميعاً.",
+                "title": "تغييرات غير محفوظة"
+            }
+        },
+        "brand": {
+            "name": "ChatterUI"
+        },
+        "emptyStates": {
+            "noItems": "لا توجد عناصر"
+        },
+        "errors": {
+            "couldNotGetData": "تعذّر جلب البيانات. حدث خطأ غير متوقع.",
+            "failedToCopy": "فشل النسخ",
+            "failedToCreateData": "فشل إنشاء البيانات",
+            "fileInvalid": "الملف غير صالح",
+            "filenameInvalidImportFailed": "اسم الملف غير صالح، فشل الاستيراد",
+            "invalidFileType": "نوع الملف غير صالح",
+            "permissionRequired": "الإذن مطلوب",
+            "rollingBackDueToError": "جارٍ التراجع بسبب حدوث خطأ",
+            "schemaValidationFailed": "فشل التحقق من بنية البيانات"
+        },
+        "labels": {
+            "comment": "تعليق",
+            "content": "المحتوى",
+            "cpu": "المعالج",
+            "description": "الوصف",
+            "devMode": "وضع المطوّر",
+            "external": "خارجي",
+            "internal": "داخلي",
+            "name": "الاسم",
+            "none": "لا شيء",
+            "preferences": "التفضيلات",
+            "result": "النتيجة",
+            "results": "النتائج",
+            "selected": "محدد",
+            "suggestions": "اقتراحات",
+            "tokens": "رموز",
+            "version": "الإصدار",
+            "model": "النموذج",
+            "api": "واجهة API"
+        },
+        "messages": {
+            "importingFile": "جارٍ استيراد الملف...",
+            "successfullyImported": "تم الاستيراد بنجاح"
+        },
+        "navigation": {
+            "about": "حول التطبيق",
+            "settings": "الإعدادات"
+        }
+    },
+    "navigation": {
+        "about": "حول التطبيق",
+        "api": "واجهة API",
+        "dataSources": "مصادر البيانات",
+        "dev_colortest": "[للمطورين] اختبار الألوان",
+        "dev_components": "[للمطورين] المكونات",
+        "dev_markdown": "[للمطورين] Markdown",
+        "formatting": "التنسيق",
+        "logs": "السجلات",
+        "lorebooks": "كتب المعلومات",
+        "models": "النماذج",
+        "sampler": "إعدادات التوليد",
+        "settings": "الإعدادات",
+        "tts": "تحويل النص إلى كلام"
+    },
+    "settings": {
+        "title": "الإعدادات",
+        "language": {
+            "title": "اختيار اللغة"
+        },
+        "chat": {
+            "askInChatterUI": "استخدام ChatterUI للإدخال",
+            "askInChatterUIDescription": "استخدم مطالبات ChatterUI لتحديد نية النص بدلاً من سلوك لوحة المفاتيح الافتراضي.",
+            "autoGenerateTitles": "إنشاء عناوين المحادثات تلقائياً",
+            "autoGenerateTitlesDescription": "إنشاء عناوين تلقائياً للمحادثات الجديدة.",
+            "autoLoadUser": "تحميل المستخدم المحدد تلقائياً",
+            "autoLoadUserDescription": "تحميل ملف المستخدم الحالي تلقائياً في المحادثات الجديدة.",
+            "loadChatOnStartup": "تحميل المحادثة عند بدء التشغيل",
+            "loadChatOnStartupDescription": "إعادة فتح آخر محادثة تلقائياً عند تشغيل التطبيق.",
+            "styleButton": "نمط المحادثة",
+            "title": "المحادثة",
+            "useFirstMessage": "إنشاء الرسالة الأولى",
+            "useFirstMessageDescription": "إضافة رسالة أولية عند إنشاء محادثة جديدة."
+        },
+        "chatstyle": {
+            "fontSize": "حجم الخط",
+            "fontWeight": "سُمك الخط",
+            "title": "نمط المحادثة"
+        },
+        "chatwindow": {
+            "alternatePositions": "تبديل مواضع الرسائل",
+            "alternatePositionsDescription": "تبديل محاذاة الرسائل الواردة والصادرة.",
+            "autoScroll": "التمرير التلقائي",
+            "autoScrollDescription": "الانتقال تلقائياً إلى أحدث رسالة.",
+            "quickDelete": "الحذف السريع",
+            "quickDeleteDescription": "السماح بحذف النص بإيماءة سريعة.",
+            "saveScrollPosition": "حفظ موضع التمرير",
+            "saveScrollPositionDescription": "استعادة موضع المحادثة السابق عند فتحها مجدداً.",
+            "sendOnEnter": "الإرسال بزر Enter",
+            "sendOnEnterDescription": "إرسال الرسالة عند الضغط على Enter.",
+            "showTokensPerSecond": "عرض الرموز في الثانية",
+            "showTokensPerSecondDescription": "عرض سرعة توليد الرموز أثناء التوليد.",
+            "title": "نافذة المحادثة",
+            "wideChat": "وضع المحادثة العريضة",
+            "wideChatDescription": "استخدام تخطيط أوسع لنافذة المحادثة."
+        }
+    }
+}
