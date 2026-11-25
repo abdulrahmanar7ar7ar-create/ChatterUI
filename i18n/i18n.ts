@@ -7,6 +7,7 @@ import { persist } from 'zustand/middleware'
 import { Storage } from '@lib/enums/Storage'
 import { createMMKVStorage } from '@lib/storage/MMKV'
 
+import ar from './locales/ar.json'
 import en from './locales/en.json'
 import id from './locales/id.json'
 import ru from './locales/ru.json'
@@ -23,6 +24,7 @@ type Language = {
 }
 
 export const supportedLanguages: Language[] = [
+    { id: 'ar', translation: ar, label: 'العربية' },
     {
         id: 'en',
         translation: en,
