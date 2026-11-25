@@ -1,6 +1,7 @@
 import { getLocales } from 'expo-localization'
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import { I18nManager } from 'react-native'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
@@ -12,8 +13,6 @@ import en from './locales/en.json'
 import id from './locales/id.json'
 import ru from './locales/ru.json'
 import zh from './locales/zh.json'
-
-// import { I18nManager } from 'react-native' may be needed by rtl
 
 const lang = getLocales()[0].languageCode ?? 'en'
 
@@ -56,7 +55,12 @@ export const useLanguageStore = create<LanguageStoreProps>()(
     persist(
         (set) => ({
             language: lang,
-            setLanguage: (language: string) => set({ language }),
+            setLanguage: (language: string) => {
+                set({ language })
+                i18n.changeLanguage(language)
+                I18nManager.allowRTL(language === 'ar')
+                I18nManager.forceRTL(language === 'ar')
+            },
         }),
         {
             storage: createMMKVStorage(),
@@ -66,6 +70,10 @@ export const useLanguageStore = create<LanguageStoreProps>()(
     )
 )
 
+const activeLanguage = useLanguageStore.getState().language ?? lang
+I18nManager.allowRTL(activeLanguage === 'ar')
+I18nManager.forceRTL(activeLanguage === 'ar')
+
 const supportedLanguageAsObject = Object.fromEntries(
     supportedLanguages.map(({ id: name, translation }) => [name, { translation: translation }])
 )
@@ -74,7 +82,7 @@ const supportedLanguageAsObject = Object.fromEntries(
 i18n.use(initReactI18next).init({
     // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
     resources: supportedLanguageAsObject,
-    lng: useLanguageStore.getState().language ?? lang,
+    lng: activeLanguage,
     fallbackLng: 'en',
 
     interpolation: {
