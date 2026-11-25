@@ -159,6 +159,126 @@
             "title": "نافذة المحادثة",
             "wideChat": "وضع المحادثة العريضة",
             "wideChatDescription": "استخدام تخطيط أوسع لنافذة المحادثة."
+        },
+        "character": {
+            "alert": {
+                "regenerateDefaultCard": {
+                    "confirm": "إنشاء البطاقة الافتراضية",
+                    "description": "سيؤدي هذا إلى إضافة بطاقة روبوت الذكاء الاصطناعي الافتراضية إلى قائمة الشخصيات.",
+                    "title": "إعادة إنشاء البطاقة الافتراضية"
+                }
+            },
+            "errors": {
+                "failedToCreateDefaultCharacter": "فشل إنشاء الشخصية الافتراضية"
+            },
+            "regenerateDefaultCard": "إعادة إنشاء البطاقة الافتراضية",
+            "title": "إدارة الشخصيات"
+        },
+        "colors": {
+            "active": "نشط",
+            "alert": {
+                "deleteTheme": {
+                    "confirm": "حذف السمة",
+                    "description": "هل تريد بالتأكيد حذف «{{name}}»؟ لا يمكن التراجع عن ذلك!",
+                    "title": "حذف السمة"
+                }
+            },
+            "builtIn": "مدمج",
+            "contextMenu": {
+                "getThemes": "الحصول على السمات",
+                "importTheme": "استيراد سمة",
+                "pasteTheme": "لصق سمة"
+            },
+            "custom": "مخصص",
+            "error": {
+                "colorNameAlreadyUsed": "اسم اللون مستخدم بالفعل",
+                "failedToImport": "فشل الاستيراد: {{error}}"
+            },
+            "pasteThemeTitle": "الصق السمة هنا",
+            "title": "السمات",
+            "useSystemDarkMode": "استخدام الوضع الداكن للنظام"
+        },
+        "database": {
+            "alert": {
+                "export": {
+                    "confirm": "تصدير قاعدة البيانات",
+                    "description": "هل تريد بالتأكيد تصدير ملف قاعدة البيانات؟\n\nسيتم تنزيله تلقائياً إلى مجلد التنزيلات.",
+                    "title": "تصدير قاعدة البيانات"
+                },
+                "import": {
+                    "confirm": "استيراد",
+                    "description": "هل تريد بالتأكيد استيراد قاعدة البيانات؟ قد يؤدي ذلك إلى إتلاف قاعدة البيانات الحالية!\n\nسيتم تنزيل نسخة احتياطية تلقائياً.\n\nسيُعاد تشغيل التطبيق تلقائياً.",
+                    "title": "استيراد قاعدة البيانات"
+                },
+                "rerunMigrations": {
+                    "confirm": "إعادة تشغيل عمليات الترحيل",
+                    "description": "قد تؤدي إعادة تشغيل عمليات الترحيل إلى إتلاف قاعدة البيانات. تأكد من تصدير نسخة احتياطية.",
+                    "title": "إعادة تشغيل عمليات الترحيل"
+                },
+                "versionMismatch": {
+                    "confirm": "استيراد على أي حال",
+                    "description": "إصدار قاعدة البيانات المستوردة ({{importedVersion}}) يختلف عن إصدار التطبيق المثبت ({{currentVersion}}). قد يؤدي الاستيراد إلى تعطل قاعدة البيانات أو تلفها. يُنصح باستخدام الإصدار نفسه.",
+                    "title": "اختلاف الإصدار"
+                }
+            },
+            "exportButton": "تصدير قاعدة البيانات",
+            "importButton": "استيراد قاعدة البيانات",
+            "rerunMigrationsButton": "إعادة تشغيل عمليات الترحيل",
+            "title": "إدارة قاعدة البيانات",
+            "toast": {
+                "downloadFailed": "فشل نسخ قاعدة البيانات: {{error}}",
+                "downloadOk": "اكتمل التنزيل!"
+            },
+            "warningText": "تحذير: تأكد من أن قاعدة البيانات المستوردة من إصدار التطبيق نفسه!"
+        },
+        "generating": {
+            "bypassContextLength": "تجاوز حد السياق",
+            "bypassContextLengthDescription": "تجاهل حدود طول السياق عند إنشاء المطالبات",
+            "printContext": "طباعة السياق",
+            "printContextDescription": "طباعة سياق التوليد في السجلات لأغراض تصحيح الأخطاء",
+            "title": "التوليد"
+        },
+        "notification": {
+            "enableNotifications": "تفعيل الإشعارات",
+            "enableNotificationsDescription": "إرسال إشعارات عندما يكون التطبيق في الخلفية",
+            "playSound": "صوت الإشعار",
+            "showText": "عرض النص في الإشعار",
+            "showTextDescription": "عرض الرسائل المُولّدة ضمن الإشعارات",
+            "title": "الإشعارات",
+            "vibrate": "اهتزاز الإشعار"
+        },
+        "screen": {
+            "keepAwake": "إبقاء الشاشة نشطة",
+            "keepAwakeDescription": "منع الجهاز من إيقاف الشاشة أثناء وجود التطبيق في المقدمة",
+            "title": "الشاشة",
+            "unlockOrientation": "إلغاء قفل الاتجاه",
+            "unlockOrientationDescription": "السماح بالوضع الأفقي على الهواتف (يتطلب إعادة تشغيل التطبيق)"
+        },
+        "security": {
+            "lockApp": "قفل التطبيق",
+            "lockAppDescription": "يتطلب مصادقة المستخدم لفتح التطبيق. لن يعمل هذا الخيار إذا لم تكن قد فعّلت قفل الجهاز.",
+            "title": "الأمان"
+        },
+        "style": {
+            "alert": {
+                "deleteBackground": {
+                    "confirm": "حذف الخلفية",
+                    "description": "هل تريد بالتأكيد حذف هذه الخلفية؟ لا يمكن التراجع عن ذلك!",
+                    "title": "حذف الخلفية"
+                }
+            },
+            "changeTheme": "تغيير السمة",
+            "deleteBackground": "حذف خلفية المحادثة",
+            "importBackground": "استيراد خلفية المحادثة",
+            "messages": {
+                "backgroundDeleted": "تم حذف الخلفية!"
+            },
+            "replaceBackground": "استبدال خلفية المحادثة",
+            "title": "المظهر"
+        },
+        "tagHider": {
+            "description": "إخفاء الشخصيات التي تحمل الوسوم التالية من قائمة الشخصيات.",
+            "label": "الوسوم المخفية"
         }
     },
     "authorNotes": {
